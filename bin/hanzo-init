@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+
+program
+  .option('--client', 'Generate a project for app or web')
+  .option('--project', 'project name')
+  .parse(process.argv);
+
+require('../lib/init')(process.argv);

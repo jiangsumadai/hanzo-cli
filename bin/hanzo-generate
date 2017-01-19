@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+
+program
+  .option('--module', 'module name')
+  .parse(process.argv);
+
+require('../lib/generate')(process.argv);
